@@ -7,3 +7,4 @@ driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install())
 
 # Abrindo um site com Selenium
 driver.get('https://sitepreco1.netlify.app/')
+input('Digite algo pra rodar...')
