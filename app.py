@@ -7,4 +7,6 @@ driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install())
 
 # Abrindo um site com Selenium
 driver.get('https://sitepreco1.netlify.app/')
+
+# este usado para fazer um break, manter o site na tela
 input('Digite algo pra rodar...')
