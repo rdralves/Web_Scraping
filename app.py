@@ -17,4 +17,4 @@ class RoboYoutube():
 
 bot = RoboYoutube()
 bot.busca("como colocar codigo python no html com flask digao007sp")
-input("fdjfkjadskfj")
+input("digite algo")
