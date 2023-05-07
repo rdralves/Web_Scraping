@@ -1,12 +1,20 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
+import os
 
-# Instanciando o selenium, definindo navegador e abrindo página, onde se fará a raspagem de dados
-driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+os.system("cls")
 
-# Abrindo um site com Selenium
-driver.get('https://sitepreco1.netlify.app/')
+# Inciando a classe roboYoutube
+class RoboYoutube():
+    def __init__(self):
+        self.webdrive = webdriver.Chrome()
 
-# este usado para fazer um break, manter o site na tela
-input('Digite algo pra rodar...')
+    def busca(self, busca):
+        url = f"https://www.youtube.com/results?search_query={busca}"
+        self.webdrive.get(url)
+
+
+bot = RoboYoutube()
+bot.busca("como colocar codigo python no html com flask digao007sp")
+input("fdjfkjadskfj")
