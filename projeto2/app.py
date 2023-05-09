@@ -6,3 +6,5 @@ url = webdriver.Chrome()
 
 # abrindo a página
 url.get('https://forms.gle/fTG7MkjZqWaRgg2GA')
+
+input('qualquer coisa...')
