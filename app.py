@@ -13,8 +13,14 @@ class RoboYoutube():
     def busca(self, busca):
         url = f"https://www.youtube.com/results?search_query={busca}"
         self.webdrive.get(url)
+        titulos = self.webdrive.find_elements( "//a[@id='video-title']")
+        for titulo in titulos:
+            print(f"video encontrado {titulo}").text
+
+
+        input("jdfkjdsk")
 
 
 bot = RoboYoutube()
-bot.busca("como colocar codigo python no html com flask digao007sp")
+bot.busca("teste")
 input("digite algo")
