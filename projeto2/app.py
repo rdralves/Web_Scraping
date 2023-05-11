@@ -1,5 +1,8 @@
 # Importação da biblioteca Selenium
 from selenium import webdriver
+import os 
+
+os.system("cls")
 
 # Instanciando o Selenium
 url = webdriver.Chrome()
@@ -8,7 +11,7 @@ url = webdriver.Chrome()
 url.get('https://rdralves.github.io/home/')
 
 # preencher email
-
+url.find_element('//*[@id="exampleInputEmail1"]').send_keys('rdr@gmail.com')
 # preecher cpf
 
 # peencher senha
