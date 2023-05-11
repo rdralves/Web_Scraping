@@ -8,7 +8,12 @@ import time
 import os
 
 
-dados = ['rdr@gmail.com', 12365498798, 'rdr123']
+
+dados = {
+    'email': 'rdr@gmail.com',
+    'cpf': 12365498798,
+    'senha': 'rdr123'
+}
 os.system("cls")
 print("Iniciando nosso robô...")
 
@@ -19,16 +24,16 @@ url = webdriver.Chrome()
 url.get('https://rdralves.github.io/home/')
 
 # preencher email
-url.find_element(By.XPATH, '//*[@id="exampleInputEmail1"]').send_keys(dados[0])
+url.find_element(By.XPATH, '//*[@id="exampleInputEmail1"]').send_keys(dados['email'])
 time.sleep(0.5)
 
 # preenche cpf
-url.find_element(By.XPATH, '//*[@id="exampleInputCPF"]').send_keys(dados[1])
+url.find_element(By.XPATH, '//*[@id="exampleInputCPF"]').send_keys(dados['cpf'])
 time.sleep(0.5)
 
 # peenche senha
 url.find_element(
-    By.XPATH, '//*[@id="exampleInputPassword1"]').send_keys(dados[2])
+    By.XPATH, '//*[@id="exampleInputPassword1"]').send_keys(dados['senha'])
 time.sleep(0.5)
 
 # clica no botão Enviar
