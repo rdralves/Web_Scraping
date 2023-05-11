@@ -5,6 +5,6 @@ from selenium import webdriver
 url = webdriver.Chrome()
 
 # abrindo a página
-url.get('https://forms.gle/fTG7MkjZqWaRgg2GA')
+url.get('https://rdralves.github.io/home/')
 
 input('qualquer coisa...')
