@@ -7,4 +7,12 @@ url = webdriver.Chrome()
 # abrindo a página
 url.get('https://rdralves.github.io/home/')
 
+# preencher email
+
+# preecher cpf
+
+# peencher senha
+
+# clicar no botão Enviar
+
 input('qualquer coisa...')
